@@ -193,3 +193,10 @@ ol li {
     box-sizing: border-box;
     outline: 0;
 }
+
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  color: red;
+}
