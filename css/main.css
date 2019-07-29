@@ -196,12 +196,25 @@ ol li {
 }
 
 
-/* Navigation bar style start */
+/* Navigation bar + Header style start */
 
 header {
   background-color: red;
 }
 
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: green;
+  transform: translateY(-200%);
+}
+
+body.scroll header.sticky {
+  transform: translateY(0);
+  transition: 0.2s;
+}
 
 .nav-wrapper {
   max-width: 1200px;
@@ -233,4 +246,8 @@ nav.nav-wrapper ul li a {
 
 nav.nav-wrapper ul li a:hover {
   border-bottom: 1px solid #ffffff;
+}
+
+header .logo img {
+  max-width: 100px;
 }
