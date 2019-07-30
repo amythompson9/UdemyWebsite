@@ -37,10 +37,21 @@
           </nav>
       </header>
       <div class="wrapper">
-          <ul id="scene">
-              <li class="layer"></li>
-              <li class="layer"></li>
-              <li class="layer"></li>
+          <ul id="scene"
+                data-invert-x="false"
+                data-invert-y="false"
+                data-scalar-x="7"
+                data-scalar-y="7"
+                data-friction-x="1.0"
+                data-friction-y="1.0"
+                data-origin-x="0.5"
+                data-origin-y="0.5">
+              <li class="layer name" data-depth="0.90">Your Name Here</li>
+              <li class="layer title" data-depth="0.50">Your Designation Here</li>
+              <li class="layer btn btn-main" data-depth="0.30">
+                  <a href="#" class="portfolio-btn">View Portfolio</a>
+                  <a href="#" class="contact-btn">Contact Me</a>
+              </li>
           </ul>
       </div>
     </section>
@@ -48,8 +59,13 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <<script src="scripts/parallax.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
     <script src="scripts/main.js"></script>
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new parallax(scene);
+    </script>
 </body>
 
 </html>
