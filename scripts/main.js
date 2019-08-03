@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //sticky header
   var $header = $('header');
   var $sticky = $header.before($header.clone().addClass("sticky"));
 
@@ -7,5 +8,11 @@ $(document).ready(function(){
     $("body").toggleClass("scroll", (scrollFromTop > 350));
   });
 
-  
+  //Masonry
+  $('.grid').masonry({
+    //options
+    itemSelection: '.grid-item',
+    columnWidth: 120,
+    fitWidth: true
+  });
 });
