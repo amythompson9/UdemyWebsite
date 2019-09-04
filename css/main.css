@@ -363,3 +363,39 @@ h2.sub-title::after {
   margin: 30px auto 0 auto;
 }
 /* Masonry JS styles end */
+
+/* I Love Photography Animation Start */
+
+section.beating-heart {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg') no-repeat right bottom / cover;
+  text-align: center;
+  height: 100vh;
+  padding: 50px 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+section.beating-heart span {
+  font-size: 100px;
+  line-height: 105px;
+}
+
+section.beating-heart h2 {
+  margin-bottom: 30px;
+}
+
+section.beating-heart h2::after {
+  background: white;
+}
+
+.heart {
+  position: relative;
+  fill: red;
+  width: 150px;
+  margin: 0 50px;
+
+}
+/* I Love Photography Animation End */
