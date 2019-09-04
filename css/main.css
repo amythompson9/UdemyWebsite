@@ -338,6 +338,7 @@ ul#scene {
 
 .grid-item {
   width: 450px;
+  margin-bottom: 10px;
 }
 
 .tall-img {

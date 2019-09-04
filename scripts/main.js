@@ -11,8 +11,9 @@ $(document).ready(function(){
   //Masonry
   $('.grid').masonry({
     //options
-    itemSelection: '.grid-item',
+    itemSelector: '.grid-item',
     columnWidth: 120,
-    fitWidth: true
+    fitWidth: true,
+    gutter: 0
   });
 });
