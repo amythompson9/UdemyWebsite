@@ -482,3 +482,44 @@ footer h1 {
 }
 
 /*Footer End */
+
+/* Responsive Menu Start */
+
+@media only screen and (max-width: 768px) {
+    .menu-trigger {
+        background: url('../images/hamburger-icon.svg') no-repeat center / cover;
+        width: 35px;
+        height: 35px;
+        display: block;
+        z-index: 10;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+
+    .main-overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.72);
+      z-index: 6;
+      display: none;
+    }
+
+    .main-overlay:after {
+      background: url('../images/close-icon.svg') no-repeat center / cover;
+      width: 35px;
+      height: 35px;
+      display: block;
+      content: "";
+      position: fixed;
+      right: 10px;
+      top: 20px;
+      z-index: 20;
+    }
+
+}
+
+/* Responsive Menu End */
