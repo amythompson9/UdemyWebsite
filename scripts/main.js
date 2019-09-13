@@ -41,4 +41,22 @@ $('.menu li a[href^="#"]').on('click', function(e){
     prevArrow: '<button type="button" class="slick-prev">Previous</button>',
     nextArrow: '<button type="button" class="slick-next">Next</button>'
   });
+
+  //Responsive Menu start
+  var body = $('body');
+  var menuTrigger = $('.js-menu-trigger');
+  var mainOverlay = $('.js-main-overlay');
+
+  menuTrigger.on('click', function(){
+    body.addClass('menu-is-active');
+  });
+
+  mainOverlay.on('click', function(){
+    body.removeClass('menu-is-active');
+  });
+
+  $('.menu li a').on('click', function(){
+    $('body').removeClass("menu-is-active")
+  });
+
 });
