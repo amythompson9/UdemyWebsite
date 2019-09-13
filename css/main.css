@@ -515,11 +515,34 @@ footer h1 {
       display: block;
       content: "";
       position: fixed;
-      right: 10px;
-      top: 20px;
+      top: 10px;
+      right: 20px;
       z-index: 20;
     }
-
+    .menu {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: #131313;
+      width: 100%
+      max-width: 300px;
+      z-index: 30;
+      transform: translate3d(-100%, 0, 0);
+    }
+    nav.nav-wrapper ul li {
+      display: block;
+      margin-top: 20px;
+      padding: 0;
+      padding-bottom: 20px;
+    }
+    nav.nav-wrapper ul li a {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    nav.nav-wrapper ul li a:hover {
+      border-color: transparent;
+    }
 }
 
 /* Responsive Menu End */
