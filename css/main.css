@@ -396,7 +396,26 @@ section.beating-heart h2::after {
   fill: red;
   width: 150px;
   margin: 0 50px;
-  animation: pulse 1s infinite;
+  -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.25);
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  35% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes pulse {
@@ -504,7 +523,7 @@ footer h1 {
         display: block;
         z-index: 10;
         position: absolute;
-        right: 10px;
+        right: 20px;
         top: 15px;
     }
 
@@ -536,7 +555,7 @@ footer h1 {
       bottom: 0;
       left: 0;
       background: #131313;
-      width: 100%
+      width: 100%;
       max-width: 300px;
       z-index: 30;
       transform: translate3d(-100%, 0, 0);
@@ -577,6 +596,9 @@ footer h1 {
     font-size: 20px;
     line-height: 25px;
     margin-top: 40px;
+  }
+  div.grid {
+    width: initial !important;
   }
   .btn {
     margin-top: 80px;
